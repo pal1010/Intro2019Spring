@@ -1,0 +1,24 @@
+/**
+ * This program prompts the user to enter 3 things to make a phrase
+ *
+ * @Pal1010
+ * @1-31-19
+ */
+
+import java.util.Scanner; //required import for terminal IO
+//This will give us "tools" from a prewritten class to use in this code.
+public class Greetings
+{
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in); //Required Line for terminal IO
+        System.out.print("Enter your name:");//enter your name
+        String name = in.nextLine(); 
+        System.out.print("Enter the date:");//enter the date
+        String date = in.nextLine();
+        System.out.print("Enter the day of the week:");//enter the day of the week 
+        String dayoftheWeek = in.nextLine();
+        System.out.println("Hello " + name +" today is " + dayoftheWeek+" "+date);
+         
+    }
+}
