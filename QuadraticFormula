@@ -1,0 +1,27 @@
+/**
+ * This promts the user to enter the values to solve the quadratic formaula
+ * @pal1010
+ * 2-7-19
+ */
+import java.util.Scanner;
+
+public class QuadraticFormula
+{
+    public static void main(String[] args)
+    {Scanner in = new Scanner(System.in);
+     
+     System.out.println("Enter values of Quadratic Equation : ax^2+bx+c=0");
+     System.out.print("A: ");// please enter the value for A
+     double a = in.nextDouble(); 
+     System.out.print("B: ");
+     double b = in.nextDouble();// please enter the value for B 
+     System.out.print("C: ");
+     double c = in.nextDouble();// please enter the value for C
+     
+     double answerOne = (-b + Math.sqrt((Math.pow(b,2)) - (4 * a * c)))/(2 * a);
+     double answerTwo = (-b - Math.sqrt((Math.pow(b,2)) - (4 * a * c)))/(2 * a);
+     
+     System.out.println("First solution is:" + answerOne);
+     System.out.println("Second solution is:" + answerTwo);
+    }
+}
