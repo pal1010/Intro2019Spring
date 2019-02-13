@@ -1,0 +1,47 @@
+
+/**
+ *@pal1010
+ *2-13-19
+ *This program promts the user to enter a payment amount and tells the user the number of change required.
+ * 
+ */
+import java.util.Scanner;
+
+public class MakeChange
+{
+    public static void main(String[] args)
+    {Scanner in = new Scanner(System.in);
+     System.out.print("Please enter a dollar amount: ");
+     int dollars = in.nextInt();
+     int numTwenties = dollars/20;
+     int afterTwenties = dollars%20;
+     int numTens = afterTwenties/10;
+     int afterTens = afterTwenties%10;
+     int numFives = afterTens/5;
+     int afterFives = afterTens%5;
+     int numOnes = afterFives/1;
+     int afterOnes = afterFives%1;
+     
+     System.out.print("Please enter a cents amount: ");
+     int cents = in.nextInt();
+     int numQuarters = cents/25;
+     int afterQuarters = cents%25;
+     int numDimes = afterQuarters/10;
+     int afterDimes = afterQuarters%10;
+     int numNickels = afterDimes/5;
+     int afterNickels = afterDimes%5;
+     int numPennies= afterNickels/1;
+     int afterPennies = afterNickels%1;
+     
+     System.out.println("The change will be " + numTwenties + " twenties");
+     System.out.println("Plus " + numTens + " tens");
+     System.out.println("Plus " + numFives + " fives");
+     System.out.println("Plus " + numOnes + " ones");
+     System.out.println("Plus "  + numQuarters + " quarters");
+     System.out.println("Plus "  + numDimes + " dimes");
+     System.out.println("Plus "  + numNickels + " nickels");
+     System.out.println("Plus "  + numPennies + " pennies");
+     
+     
+    }
+}
