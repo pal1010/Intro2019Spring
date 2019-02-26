@@ -1,0 +1,42 @@
+
+/**
+ * // This program promts the user to enter different words so it produces a completed Madlib
+ * @pal1010
+ * 2-14-19
+ * 
+ */
+import java.util.Scanner;
+
+public class MadLib
+{
+    public static void main(String[] args)
+    {Scanner in = new Scanner(System.in);
+        
+     System.out.println("Please enter a proper noun: ");
+     System.out.println("Please enter another proper noun: ");
+     System.out.println("Please enter a color: ");
+     System.out.println("Please enter a verb: ");
+     System.out.println("Please enter another verb: ");
+     System.out.println("Please enter an adverb: ");
+     System.out.println("Please enter an integer: ");
+     
+     String properNoun1 = in.nextLine();
+     String properNoun2 = in.nextLine();
+     String Color = in.nextLine();
+     String Verb1 = in.nextLine();
+     String Verb2 = in.nextLine();
+     String Adverb = in.nextLine(); 
+     int number = in.nextInt(); 
+     int number2 = (number * 5);
+     
+     System.out.println(" Once upon a time " + properNoun1 + " was taking a trip to " + properNoun2);
+     System.out.println(" To get there you had to " + Verb1 + " it took almost " + number + " hours " + " but it was worth it to see the family ");
+     System.out.println(" But it felt like " + number2 + " hours ");
+     System.out.println(" I didn't realize they " + Verb2 + " in the middle of nowhere ");
+     System.out.println(" Once I realized that I needed to leave " + Adverb + " before my face turned " + Color);
+     
+     
+        
+        
+    }
+}
