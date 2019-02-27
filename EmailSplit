@@ -13,9 +13,9 @@ public class EmailSplit
      System.out.println("Hey user please enter your preferred email address: ");
      String email = in.nextLine();//prompts the user to enter their email
      
-     System.out.println("The length of a email is " + email.length() );
+     int length = email.length(); 
+     int loc = email.indexOf("@");
      
-     System.out.println("The position of @ is " + email.indexOf("@"));
      
      String username = email.substring(0,email.indexOf("@"));
      String domain = email.substring(email.indexOf("@"));
