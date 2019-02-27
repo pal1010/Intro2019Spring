@@ -1,0 +1,26 @@
+
+/**
+ * This program promts the user for their email address and will produce the email split
+ * @pal1010
+ * 2-26-19
+ */
+import java.util.Scanner;
+public class EmailSplit
+{
+    public static void main(String[] args)
+    {Scanner in = new Scanner(System.in); 
+     
+     System.out.println("Hey user please enter your preferred email address: ");
+     String email = in.nextLine();//prompts the user to enter their email
+     
+     System.out.println("The length of a email is " + email.length() );
+     
+     System.out.println("The position of @ is " + email.indexOf("@"));
+     
+     String username = email.substring(0,email.indexOf("@"));
+     String domain = email.substring(email.indexOf("@"));
+     
+     System.out.println("Username: " + username);
+     System.out.println("Domain: " + domain); 
+    }
+}
