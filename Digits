@@ -11,7 +11,7 @@ public class Digits
     {System.out.println("Please enter your phone number:");
      String phone = in.nextLine();
      int number = phone.length();
-     int loc = number.indexOf("-"); 
+     int loc = number.indexOf("-"); //I got confused on this assignment 
      
      
      
