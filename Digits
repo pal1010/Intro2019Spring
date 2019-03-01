@@ -1,0 +1,22 @@
+
+/**
+ * This program will take the users phone number in whatever format they choose and produce it in the desired format
+ * @pal1010
+ * 3-1-19
+ */
+import java.util.Scanner;
+public class Digits
+{
+    public static void main(String[] args)
+    {System.out.println("Please enter your phone number:");
+     String phone = in.nextLine();
+     int number = phone.length();
+     int loc = number.indexOf("-"); 
+     
+     
+     
+        
+        
+        
+    }
+}
