@@ -17,32 +17,33 @@ public class RichterScale
         
     
 
-    if (quakeLevel ==10);
-    {
-    System.out.println("Latah");
-    }
-    else if (quakeLevel<8>6)
-    {System.out.println("That's a lotta damage!");
-    }
-    else (quakeLevel <3)
-    {System.out.println("That's baby food");
-    }
-    
-    System.out.println("Attention! : Earthquake Level " + quakeLevel + " inbound");
-        
-    if(quakeLevel >=8)
-    {
-    System.out.println("You are totally screwed");
-}
-
-    
    
+    if (quakeLevel>8)
+    {
+        System.out.println("That's a lotta damage!");
+    }
     
+    else if (quakeLevel<6)
+    {
+        System.out.println("You should be good, but like still major damage");
+    }
     
+    else if (quakeLevel<3)
+    {
+        System.out.println("That's baby food");
+    }
     
+    else if (quakeLevel==10)
+    {
+        System.out.println("Latah");
+    }
     
-       
-    
-        
+    else 
+    {
+        System.out.println("You good");
     }
 }
+}
+    
+    
+    
