@@ -1,0 +1,84 @@
+
+/**
+ * Template for a pick your own adventure text based game.
+ * 
+ */
+import java.util.Scanner;
+public class PickYourOwn
+{
+    public static void main(String[] args)
+    {Scanner in = new Scanner(System.in);
+     System.out.println("1 for yes anything else for no");
+     System.out.print("Are you bored?");
+     int choice1 = in.nextInt();
+     if(choice1 == 1)
+     { System.out.println("Let's go on an adventure! You down?");
+    
+    }
+    else
+    {System.out.println("Lol you are still coming for the adventure");
+    }
+    
+int choice2 = in.nextInt();
+    System.out.print("Would you like to go somewhere warm or somewhere cold? 1 for warm, anything else for cold");
+    
+
+if (choice2 == 1)
+    {System.out.println("You are in Florida on a deserted island!");
+    }
+    else
+    {System.out.println("You are in the Alaskan Wilderness all by yourself!");
+    }
+int choice3 = in.nextInt();
+System.out.println("A storm is coming! Are you ready?");
+if (choice3 == 1)
+{System.out.println("You better be, this is gonna be crazy");
+}
+else
+{System.out.println("Then get ready!");
+}
+
+int choice4 = in.nextInt();
+System.out.println("Do you take shelter and ride it out or try to run from it?1 for ride out");
+if (choice4 ==1)
+{System.out.println("The storm is too powerful, you must move quickly, you run into a wild animal");
+}
+else
+{System.out.println("You find a wild animal that tries to attack you!");
+}
+int choice5 = in.nextInt();
+System.out.println("Do you kill it?");
+if (choice5 ==1)
+{System.out.println("You use it for food.");
+}
+else
+{System.out.println("How are you going to survive then?");
+}
+int choice6 = in.nextInt();
+System.out.println("You can only save one person! Do you save yourself or your friend?");
+if (choice6 ==1)
+{System.out.println("Good choice. You have limited food but you find a flare. It's all up to you.");
+}
+else
+{System.out.println("Poor decision. You just ended our game but your still going to come along.");
+}
+int choice7 = (int) (Math.random()*10 + 1);
+System.out.println("Do you take your chances and shoot your flare?");
+if (choice7 > 5)
+{System.out.println("A helicopter comes");
+}
+else
+{System.out.println("You find an old radio that somehow still works and call for help");
+}
+int choice8 = in.nextInt();
+System.out.println("Thank you for playing, did you have fun?");
+if (choice8 ==1)
+{System.out.println("That's good I'm glad!");
+}
+else
+{System.out.println("You're totally lying, you had fun!");
+}
+    
+}
+}
+
