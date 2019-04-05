@@ -1,0 +1,25 @@
+
+/**
+ * Program which prompts for an integer.
+ * @pal1010
+ */ 4-5-19
+import java.util.Scanner;
+public class Factors
+{
+    public static void main(String[] args)
+    {
+    Scanner in = new Scanner(System.in);
+     
+     System.out.println("Please enter a positive integer!");
+     int num = in.nextInt();
+     for (int i = 1; i<=num/2; i++)
+     {
+     if(num % i == 0)
+     {
+         System.out.println(i +", ");
+     } 
+     
+    }
+    System.out.println("and " + num);
+}
+}
