@@ -1,0 +1,46 @@
+/**
+ * The user will guess the number and be told whether the number is too high or too low.
+ *@pal1010
+ *4-10-19
+ */
+
+import java.util.Scanner;
+
+public class TriviaQ
+{
+   
+   public static void main(String [] args)
+   {
+       Scanner in = new Scanner(System.in);
+       
+       System.out.println("Guess the number!");
+       int num = in.nextInt();
+       int numTries = 0;
+       int correctNum = (int) (Math.random() * 100 + 1);
+       
+      
+       while(num != correctNum)  
+       {
+       if (num > correctNum)
+       {
+         System.out.println("Too High!");
+         System.out.println("Wrong Try Again");
+         numTries ++;
+         System.out.println("Number of Tries: " + numTries);
+         num = in.nextInt();
+       
+       }
+       else
+       {
+         System.out.println("Too Low!");
+         System.out.println("Wrong Try Again");
+         numTries ++;
+         System.out.println("Number of Tries: " + numTries);
+         num = in.nextInt();
+       }
+      
+   }
+    numTries++;
+     System.out.println("Correct!, it took you " + numTries + " tries ");
+}
+}
