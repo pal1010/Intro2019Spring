@@ -1,0 +1,92 @@
+
+/**
+ * Text based adventure game.
+ * @pal1010
+ * 5-14-19
+ * 
+ */
+import java.util.Scanner;
+public class PickYourOwn2
+{
+    public static void main(String[] args)
+    {Scanner in = new Scanner(System.in);
+    
+     System.out.println("1 for yes anything else for no or 1 for first answer, 2 for second");
+     System.out.print("Are you bored?");
+    int choice1 = in.nextInt();
+     if(choice1 == 1)
+    { 
+        System.out.println("Let's go on an adventure! You down?");
+    
+    }
+    else
+    {
+        System.out.println("Lol you are still coming for the adventure!");
+    
+    }
+    
+    
+    System.out.println("Please choose a character: Yoda or Groot");
+    int choice2 = in.nextInt();
+    if(choice2 == 1)
+    {
+     System.out.println("Please enter a name: ");
+     String name = in.nextLine();
+     System.out.println("Please enter another name: ");
+     String name2 = in.nextLine();
+     System.out.println("Please enter a verb: ");
+     String verb1 = in.nextLine();
+     System.out.println("Please enter another verb: ");
+     String verb2 = in.nextLine();
+     System.out.println("Please enter a adjective: ");
+     String adj1 = in.nextLine();
+     System.out.println("Please enter another ajective: ");
+     String adj3 = in.nextLine();
+        System.out.println("Good choice. The best character in movie history is now you, but trouble awaits!");
+        System.out.println("The force is strong in " + name + " and he is about to team up and join the dark side. Would you like to fight him or help him?");
+        int choice3 = in.nextInt();
+    
+        if(choice3 == 1)
+        {
+        System.out.println("You are going to need some help Master Yoda. " + name2 + " is your only hope. You train " + name2 + " but they are so " + adj1);
+        System.out.println("After completing training you seem to think " + name2 + " is ready to take down the evil " + name);
+        }
+    else 
+        {
+        System.out.println("It's too late. " + name + " is too strong. You must fight him.");
+        System.out.println("You are going to need some help Master Yoda. " + name2 + " is your only hope. You train " + name2 + " but they are so " + adj1);
+        System.out.println("After completing training you seem to think " + name2 + " is ready to take down the evil " + name);
+        System.out.println("You and " + name2 + adj3 + " the evil " + name);
+    }
+    }
+    
+    else 
+    {
+        System.out.println("Groot should serve you well. Watch your six tho. Thanos is coming");
+        System.out.println(" ");
+        System.out.println("Please enter a noun: ");
+        String noun1 = in.nextLine();
+        System.out.println("Please enter a verb: ");
+        String verb1 = in.nextLine();
+        System.out.println("Please enter a number: ");
+        String number = in.nextLine();
+        System.out.println("Please enter an adjective: ");
+        String adj1 = in.nextLine();
+        System.out.println("Please enter another adjective: ");
+        String adj2 = in.nextLine();
+        System.out.println("Groot pretended to be a " + noun1 + " when Thanos came by looking to " + verb1 + " him.");
+        System.out.println("It took Thanos " + number + " days to find Groot. Thanos didn't know how " + adj1 + " Groot was.");
+        System.out.println("Groot then " + adj2 + " Thanos, and all ends well:)");
+    }
+    
+    
+ 
+    
+    }
+    
+    
+}
+
+
+
+    
